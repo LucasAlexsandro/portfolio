@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="https://i.imgur.com/Lnn09o2.png" alt="Get Coffee Design" width="960">
+    <img src="https://imgur.com/a/jrqQvhj" alt="Get Coffee Design" width="960">
 
   <h3 align="center">PortFolio Lucas</h3>
  <br />
