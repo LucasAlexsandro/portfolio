@@ -98,6 +98,7 @@ body {
     width: 100%;
     min-height: 70vh;
     padding-top: 110px;
+    background: #fff;
 }
 .container {
     width: 100%;
@@ -365,7 +366,7 @@ body {
     width: 350px;
     height: 560px;
     border: 1px solid #eceff8;
-    margin: 0 20px;
+    margin: 30px;
     text-align: center;
     display: flex;
     background-color: var(--color-branco);
