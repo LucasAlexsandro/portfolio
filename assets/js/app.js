@@ -32,4 +32,6 @@ for(let i = 0; i < portfolioList.length; i++){
     })
 }
 
-//
+// Efeito de Digitação!
+
+const mensagens = ["Desenvolvedor Web", "", ""];
