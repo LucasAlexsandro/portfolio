@@ -49,138 +49,50 @@ a {
 
 /*====================  HEADER =====================*/
 
-.topo {
+.header {
+    position: fixed;
     width: 100%;
-    height: 70px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: var(--shadow);
-    z-index: var(--z-fixed);
+    height: 80px;
+}
+.header__content{
+    margin-top: 20px;
     background-color: var(--color-branco);
-}
-
-.topo__logo {
-    padding-left: 20px;
-    width: 250px;
-    height: auto;
-}   
-
-.topo__itens {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.topo__itens select {
-    margin-right: 25px;
-    font-size: 0.9rem;
-    border: none;
-}
-
-.topo__sociais a{
-    text-decoration: none;
-}
-
-.topo__sociais i {
-    margin-right: 15px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    background-color: var(--color-roxo);
-    color: var(--color-branco);
-    box-shadow: var(--shadow);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.topo__btn {
-    width: 170px;
-    background-color: var(--color-roxo);
-    height: 100%;
-    border: none;
-    color: var(--color-branco);
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.topo__menu {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 25vw;
-    height: calc(100vh - 70px);
-    background-color: var(--color-roxo);
-    z-index: var(--z-fixed);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: all .3s ease-in;
-	-webkit-transition: all .3s ease-in;
-}
-
-.topo__menu__active {
-    display: block;
-    transition: all .3s ease-in;
-	-webkit-transition: all .3s ease-in;
-}
-
-.topo__menu ul {
     width: 100%;
-    height: 100%;
+    height: 80px;
+    z-index: 999;
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+}
+
+.header__content nav {
+    width: 100%;
+}
+
+.header__logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color-roxo);
+    margin-left: 15px;
+}
+
+.header__menu ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-right: 15px;
 }
 
-.topo__menu ul li {
-    padding: 15px;
-    text-align: center;
+.header__menu ul li {
+    margin-left: 20px;
 }
 
-.topo__menu ul li a {
-    color: var(--color-branco);
-    font-size: 1.6rem;
+.header__menu ul li a {
+    font-size: 1.1rem;
     text-decoration: none;
+    font-weight: bold;
+    color: var(--color-preto);
 }
-
-.topo__menu ul li a:hover {
-    opacity: 0.9;
-}
-
-/*MEDIAS TOPO*/
-
-@media screen and (max-width: 760px){
-    .topo__menu {
-        width: 65vw;
-        height: calc(100vh - 70px);
-    }
-
-    .topo__sociais i{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .topo {
-        height: 50px;
-    }
-    .topo__logo {
-        padding-left: 0;
-        width: 150px;
-        height: auto;
-    } 
-    .topo__btn {
-        width: 100px;
-    }
-}  
 
 
 /*====================  BANNER TOPO =====================*/
@@ -188,14 +100,10 @@ a {
 .banner {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--color-branco-gelo);
+    background-color: var(--color-bg);
     background-image: url(https://samar.dexignzone.com/xhtml/images/main-slider/slider2/pic2.png);
     background-repeat: no-repeat;
     background-position: top;
-}
-
-.banner__text {
-    padding-top: 80px;
 }
 
 .banner__smile {
@@ -221,7 +129,7 @@ a {
 .banner__text h2 {
     font-size: 4rem;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 90px;
     color: var(--color-roxo);
 }
 
@@ -268,6 +176,24 @@ a {
 .banner__btn:hover > i {
     color: var(--color-roxo);
     transition: all 0.3s ease-in-out;
+}
+
+.banner__social {
+    margin-top: 50px;
+}
+
+.banner__social i {
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--color-roxo);
+    border: 1px solid var(--color-roxo);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 760px){
@@ -467,6 +393,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: var(--shadow);
 }
 
 .board__box img {
