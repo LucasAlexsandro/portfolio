@@ -37,6 +37,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: var(--color-branco);
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -50,48 +51,143 @@ a {
 /*====================  HEADER =====================*/
 
 .header {
-    position: fixed;
     width: 100%;
     height: 80px;
-}
-.header__content{
-    margin-top: 20px;
-    background-color: var(--color-branco);
-    width: 100%;
-    height: 80px;
-    z-index: 999;
-    border-radius: 2px;
-    box-shadow: var(--shadow);
-}
-
-.header__content nav {
-    width: 100%;
-}
-
-.header__logo span{
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: var(--color-roxo);
-    margin-left: 15px;
-}
-
-.header__menu ul{
-    margin: 0;
-    padding: 0;
+    background-color: var(--color-roxo);
     display: flex;
-    margin-right: 15px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header__menu ul li {
-    margin-left: 20px;
+.header__itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header__menu ul li a {
+#btnOpen {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btnOpen i {
+    font-size: 1.5rem;
+    color: var(--color-branco);
+}
+
+#btnClose{
+    background: none;
+    background-color: var(--color-roxo);
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnClose i {
+    font-size: 1.5rem;
+    color: var(--color-branco);
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--color-branco);
+    user-select: none; 
+}
+
+/*SIDEBAR MENU*/
+
+.sidebar__menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -200%;
+    z-index: 9999;
+    width: 500px;
+    height: 100vh;
+    background-color: var(--color-branco);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.4s ease;
+}
+
+.sidebar__menu.close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 500px;
+    height: 100vh;
+    background-color: var(--color-branco);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar__menu.close {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .sidebar__menu.close {
+        width: 100%;
+        height: 130vh;
+    }
+}
+
+.sidebar__close {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebar__close span {
+    font-size: 1.5rem;
+    color: var(--color-roxo);
+    font-weight: bold;
+}
+
+.sidebar__menu hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #f2f2f4;
+}
+
+.menu__itens {
+    padding: 20px 0px;
+}
+
+.menu__itens ul li{
+    width: 80%;
+    list-style-type: none;
+    margin-top: 25px;
+    border-bottom: 1px solid #f2f2f4;
+    padding: 5px;
+}
+
+.icon-link {
     font-size: 1.1rem;
+    background: rgba(61, 184, 255, 0.4);
+    padding: 10px;
+    color: var(--color-roxo);
+    border-radius: 5px;
+}
+
+.menu-link {
+    margin-left: 10px;
     text-decoration: none;
     font-weight: bold;
-    color: var(--color-preto);
+    color: var(--color-gray);
 }
 
 
