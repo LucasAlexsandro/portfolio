@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-
 const GlobalStyle = createGlobalStyle`   
   :root {
     // Colors
@@ -72,7 +71,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale; /* apenas para Mac OS X/macOS */
     font-smooth: always; /* Non-standard */
   }
-
 `;
  
 export default GlobalStyle;
