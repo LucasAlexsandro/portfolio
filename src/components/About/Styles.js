@@ -1,12 +1,25 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
-  margin-top: 3rem;
-  max-width: 600px;
   width: 100%;
-  height: 250px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const AboutContent = styled.div`
+  width: 50%;
+`;
+
+export const TitleAbout = styled.h1`
+  
+`;
+
+export const TabContainer = styled.div`
+  width: 50%;
   background-color: var(--color-semidark);
-  border-radius: 2px;
+  border-radius: 10px;
 `;
 
 export const Tab = styled.div`
@@ -17,7 +30,7 @@ export const Tab = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  border-radius: 2px;
+  border-radius: 10px;
 `;
 
 export const TabInfo = styled.h2`
