@@ -4,11 +4,11 @@ import { Container } from "../../pages/Home/Styles";
 
 function Portfolio() {
   return (
-    <>
+    <Container>
       <C.PortfolioContainer>
         PORTFOLIO
       </C.PortfolioContainer>
-    </>
+    </Container>
   )
 }
 

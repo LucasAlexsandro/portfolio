@@ -10,25 +10,35 @@ export const AboutContainer = styled.section`
 `;
 
 export const AboutLeft = styled.div`
-  flex: 1;
+  flex: 45%;
   font-family: "Nunito", sans-serif;
+
+  @media (max-width: 800px) {
+    flex: 100%;
+  }
 `;
 
 export const SubTitle = styled.h3`
-  width: 150px;
   font-weight: bold;
-  border-radius: 5px;
+  color: var(--color-primary);
 `;
 
 export const Title = styled.h1`
   margin-top: 1rem;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 3rem;
 `;
 
 export const Content = styled.p`
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  white-space: normal;
+  line-height: 30px;
+  text-align: justify;
+
+  span {
+    color: var(--color-primary);
+  }
 `;
 
 export const Counter = styled.div`
@@ -54,7 +64,7 @@ export const CountInfo = styled.span`
 `;
 
 export const Button = styled.button`
-  background-color: var(--color-yellow);
+  background-color: var(--color-primary);
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
@@ -65,7 +75,17 @@ export const Button = styled.button`
 `;
 
 export const AboutRight = styled.div`
-  flex: 1 500px;
-  border: 1px solid red;
+  flex: 52%;
+
+  @media (max-width: 800px) {
+    flex: 100%;
+  }
+`;
+
+export const AboutTab = styled.div`
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-semidark);
+  border-radius: 10px;
 `;
 

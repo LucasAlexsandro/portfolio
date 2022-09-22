@@ -6,15 +6,15 @@ function About() {
   return (
     <>
       <Container>
-      <C.AboutContainer>
+        <C.AboutContainer>
           <C.AboutLeft>
             <C.SubTitle>SOBRE MIM</C.SubTitle>
             <C.Title>DESENVOLVEDOR WEB & QA</C.Title>
             <C.Content>
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              Oiii! Meu nome é <span>Lucas Alexsandro</span>. Sou Desenvolvedor web e QA. Sou muito
+              apaixonado e dedicado ao meu trabalho. Com 2 anos de experiência
+              como Desenvolvedor web e QA profissional, adquiri as habilidades e
+              conhecimentos necessários para tornar seu projeto um sucesso.
             </C.Content>
             <C.Counter>
               <C.CountItem>
@@ -33,9 +33,9 @@ function About() {
             <C.Button>Download CV</C.Button>
           </C.AboutLeft>
           <C.AboutRight>
-            teste teste  teste teste  teste teste  teste teste  vteste teste teste teste 
+            <C.AboutTab></C.AboutTab>
           </C.AboutRight>
-      </C.AboutContainer>
+        </C.AboutContainer>
       </Container>
     </>
   );
