@@ -1,56 +1,71 @@
 import styled from 'styled-components';
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  background: var(--color-dark);
+  gap: 2rem;
 `;
 
-export const AboutContent = styled.div`
-  width: 50%;
+export const AboutLeft = styled.div`
+  flex: 1;
+  font-family: "Nunito", sans-serif;
 `;
 
-export const TitleAbout = styled.h1`
-  
+export const SubTitle = styled.h3`
+  width: 150px;
+  font-weight: bold;
+  border-radius: 5px;
 `;
 
-export const TabContainer = styled.div`
-  width: 50%;
-  background-color: var(--color-semidark);
-  border-radius: 10px;
+export const Title = styled.h1`
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 4em;
 `;
 
-export const Tab = styled.div`
-  width: 100%;
-  height: 40px;
-  background-color: #16213E;
+export const Content = styled.p`
+  margin-top: 2rem;
+  font-size: 1.2rem;
+`;
+
+export const Counter = styled.div`
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-  border-radius: 10px;
+  flex-wrap: wrap;
 `;
 
-export const TabInfo = styled.h2`
-  letter-spacing: 1px;
+export const CountItem = styled.div`
+  
 `;
 
-export const Items = styled.div`
-  display: flex;
-  align-items: center;
+export const CountNumber = styled.h2`
+  font-size: 3rem;
+  color: var(--color-primary);
 `;
 
-export const TabButton = styled.button`
-  margin-left: 1rem;
-  padding: 0.3rem;
-  border-radius: 100%;
+export const CountInfo = styled.span`
+  font-size: 1rem;
+  margin-top: 1.5rem;
+`;
+
+export const Button = styled.button`
+  background-color: var(--color-yellow);
   border: none;
-  background-color: ${ props => props.color};
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--color-bg);
+  padding: 1.2rem 3rem;
+  margin-top: 2rem;
+  border-radius: 2px;
 `;
 
-export const Text = styled.p`
-  padding: 1rem;
-  font-size: var(--normal-font-size);
+export const AboutRight = styled.div`
+  flex: 1 500px;
+  border: 1px solid red;
 `;
+

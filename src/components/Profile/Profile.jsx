@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import * as C from "./Styles";
-import { Link } from "react-router-dom";
-import { Container } from "../../pages/Home/Styles";
 import { TypeAnimation } from "react-type-animation";
-import Logo from "../../assets/images/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaGithubAlt, FaFacebookF, FaLinkedinIn, FaBehance, } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
+
+import Logo from "../../assets/images/logo.png";
 
 function Profile() {
 
@@ -15,8 +14,7 @@ function Profile() {
 
   return (
     <>
-      <Container>
-        <C.Profile>
+      <C.Profile>
           <C.LogoContainer>
             <img src={Logo} alt="logo lucas" />
           </C.LogoContainer>
@@ -47,7 +45,6 @@ function Profile() {
             <C.NavLink>Contato</C.NavLink>
           </C.NavBar>
         </C.Profile>
-      </Container>
     </>
   );
 }

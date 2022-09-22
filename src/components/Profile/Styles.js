@@ -7,7 +7,7 @@ export const Profile = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 export const LogoContainer = styled.div`

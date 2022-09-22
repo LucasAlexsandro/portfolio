@@ -6,28 +6,36 @@ function About() {
   return (
     <>
       <Container>
-        <C.AboutContainer>
-          <C.AboutContent>
-            <C.TitleAbout>Sobre</C.TitleAbout>
-          </C.AboutContent>
-          <C.TabContainer>
-            <C.Tab>
-              <C.TabInfo></C.TabInfo>
-              <C.Items>
-                <C.TabButton color="#ff5e56"></C.TabButton>
-                <C.TabButton color="#fabd46"></C.TabButton>
-                <C.TabButton color="#2ddc55"></C.TabButton>
-              </C.Items>
-            </C.Tab>
-            <C.Text>
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsumlorem ipsum
-            </C.Text>
-          </C.TabContainer>
-        </C.AboutContainer>
+      <C.AboutContainer>
+          <C.AboutLeft>
+            <C.SubTitle>SOBRE MIM</C.SubTitle>
+            <C.Title>DESENVOLVEDOR WEB & QA</C.Title>
+            <C.Content>
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            </C.Content>
+            <C.Counter>
+              <C.CountItem>
+                <C.CountNumber>+02</C.CountNumber>
+                <C.CountInfo>Anos de Experiência</C.CountInfo>
+              </C.CountItem>
+              <C.CountItem>
+                <C.CountNumber>+06</C.CountNumber>
+                <C.CountInfo>Projetos Completos</C.CountInfo>
+              </C.CountItem>
+              <C.CountItem>
+                <C.CountNumber>+600</C.CountNumber>
+                <C.CountInfo>Copos de Café</C.CountInfo>
+              </C.CountItem>
+            </C.Counter>
+            <C.Button>Download CV</C.Button>
+          </C.AboutLeft>
+          <C.AboutRight>
+            teste teste  teste teste  teste teste  teste teste  vteste teste teste teste 
+          </C.AboutRight>
+      </C.AboutContainer>
       </Container>
     </>
   );

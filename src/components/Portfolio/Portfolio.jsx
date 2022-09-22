@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 import * as C from "./Styles";
 import { Container } from "../../pages/Home/Styles";
 
 function Portfolio() {
   return (
-    <Container>
-      <C.Portfolio>
-        
-      </C.Portfolio>
-    </Container>
+    <>
+      <C.PortfolioContainer>
+        PORTFOLIO
+      </C.PortfolioContainer>
+    </>
   )
 }
 
-export default Portfolio
+export default Portfolio;
