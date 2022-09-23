@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
-export const AboutContainer = styled.section`
+export const AboutArea = styled.section`
+  width: 100%;
+  min-height: 70vh;
+  background: var(--color-dark);
+`;
+
+export const AboutContainer = styled.div`
   width: 100%;
   min-height: 70vh;
   display: flex;
   flex-wrap: wrap;
-  background: var(--color-dark);
   gap: 2rem;
 `;
 
@@ -13,7 +18,7 @@ export const AboutLeft = styled.div`
   flex: 40%;
   font-family: "Nunito", sans-serif;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     flex: 100%;
   }
 `;
@@ -26,7 +31,15 @@ export const SubTitle = styled.h3`
 export const Title = styled.h1`
   margin-top: 1rem;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.2rem;
+
+  @media (max-width: 500px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 350px){
+    font-size: 1.8rem;
+  }
 `;
 
 export const Content = styled.p`
@@ -74,13 +87,19 @@ export const Button = styled.button`
   border-radius: 15px;
   font-weight: 700;
 
+  &:hover {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+  }
+
 `;
 
 export const AboutRight = styled.div`
   flex: 57%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     flex: 100%;
+    margin-top: 3rem;
   }
 `;
 
@@ -88,34 +107,43 @@ export const AboutTab = styled.div`
   width: 100%;
   height: 80px;
   background-color: var(--color-semidark);
-  border-radius: 10px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: all 1s;
 `;
 
 export const TabLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   font-size: 1rem;
   cursor: pointer;
+  border-radius: 50px;
+  background-color: ${props => props.active ? "var(--color-primary)" : ""};
+  padding: 1rem;
 `;
 
 export const TabBody = styled.div`
   margin-top: 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+  display: ${props => props.hidden ? "none" : "flex"};
 `;
 
 export const SkillItem = styled.div`
-  margin: 1.5rem;
   text-align: center;
-  width: 200px;
-  border: 1px solid red;
+  padding: 1rem;
+  width: 200px; 
 `;
 
-export const SkillIco = styled.img`
-  max-width: 60px;
+export const SkillIcon = styled.img`
+  max-width: 50px;
   width: 100%;
 `;
 

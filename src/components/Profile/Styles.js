@@ -44,8 +44,12 @@ export const TextName = styled.h1`
   font-size: 4rem;
   color: var(--color-primary);
 
-  @media only screen and (max-width: 500px) {
-    font-size: 2rem;
+  @media (max-width: 560px) {
+    font-size: 2.3rem;
+  }
+
+  @media (max-width: 330px) {
+    font-size: 1.7rem;
   }
 `;
 
@@ -71,10 +75,20 @@ export const TextDev = styled.span`
 export const Social = styled.ul`
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const SocialItem = styled.li`
   margin: 1rem;
+
+  @media (max-width: 500px){
+    margin: 0.5rem;
+  }
+
+  @media (max-width: 350px){
+    margin: 0.2rem;
+  }
 `;
 
 export const SocialLink = styled.a`
