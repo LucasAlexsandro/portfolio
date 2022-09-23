@@ -10,7 +10,7 @@ export const AboutContainer = styled.section`
 `;
 
 export const AboutLeft = styled.div`
-  flex: 45%;
+  flex: 40%;
   font-family: "Nunito", sans-serif;
 
   @media (max-width: 800px) {
@@ -69,13 +69,15 @@ export const Button = styled.button`
   cursor: pointer;
   font-size: 1.2rem;
   color: var(--color-bg);
-  padding: 1.2rem 3rem;
+  padding: 1.4rem 3rem;
   margin-top: 2rem;
-  border-radius: 2px;
+  border-radius: 15px;
+  font-weight: 700;
+
 `;
 
 export const AboutRight = styled.div`
-  flex: 52%;
+  flex: 57%;
 
   @media (max-width: 800px) {
     flex: 100%;
@@ -87,5 +89,36 @@ export const AboutTab = styled.div`
   height: 80px;
   background-color: var(--color-semidark);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `;
 
+export const TabLink = styled.a`
+  font-size: 1rem;
+  cursor: pointer;
+`;
+
+export const TabBody = styled.div`
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+`;
+
+export const SkillItem = styled.div`
+  margin: 1.5rem;
+  text-align: center;
+  width: 200px;
+  border: 1px solid red;
+`;
+
+export const SkillIco = styled.img`
+  max-width: 60px;
+  width: 100%;
+`;
+
+export const SkillText = styled.h3`
+  margin-top: 1rem;
+`;
