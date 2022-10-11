@@ -3,7 +3,7 @@ import * as C from "./Styles";
 import { Container } from "../../pages/Home/Styles";
 import data from "./Data";
 
-function About({ skills }) {
+function About() {
   const [tabActive, setTabActive] = useState(0);
 
   const [lenguages, setLenguages] = useState([]);
@@ -63,7 +63,7 @@ function About({ skills }) {
                 </C.TabLink>
               </C.AboutTab>
 
-              <C.TabBody hidden={tabActive != 0}>
+              <C.TabBody hidden={tabActive !== 0}>
                 {lenguages.length === 0 ? (
                   <p>Nenhum item encontrado</p>
                 ) : (
@@ -76,9 +76,29 @@ function About({ skills }) {
                 )}
               </C.TabBody>
 
-              <C.TabBody hidden={tabActive != 1}>teste</C.TabBody>
+              <C.TabBody hidden={tabActive !== 1}>
+                <C.ExpBody>
+                  <C.ExpYear>2011 - 2012</C.ExpYear>
+                  <C.ExpImg src="https://www.aec.com.br/wp-content/uploads/2020/10/Logo_200px_Prancheta-1-300x300.png"></C.ExpImg>
+                  <C.ExpLink>Website</C.ExpLink>
+                </C.ExpBody>
 
-              <C.TabBody hidden={tabActive != 2}>Education</C.TabBody>
+                <C.ExpBody>
+                  <C.ExpYear>2011 - 2012</C.ExpYear>
+                  <C.ExpImg src="https://www.aec.com.br/wp-content/uploads/2020/10/Logo_200px_Prancheta-1-300x300.png"></C.ExpImg>
+                  <C.ExpLink>Website</C.ExpLink>
+                </C.ExpBody>
+
+                <C.ExpBody>
+                  <C.ExpYear>2011 - 2012</C.ExpYear>
+                  <C.ExpImg src="https://www.aec.com.br/wp-content/uploads/2020/10/Logo_200px_Prancheta-1-300x300.png"></C.ExpImg>
+                  <C.ExpLink>Website</C.ExpLink>
+                </C.ExpBody>
+              </C.TabBody>
+
+              <C.TabBody hidden={tabActive !== 2}>
+                Education
+              </C.TabBody>
             </C.AboutRight>
           </C.AboutContainer>
         </Container>

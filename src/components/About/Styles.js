@@ -4,6 +4,7 @@ export const AboutArea = styled.section`
   width: 100%;
   min-height: 70vh;
   background: var(--color-dark);
+  font-family: "Nunito", sans-serif;
 `;
 
 export const AboutContainer = styled.div`
@@ -16,7 +17,6 @@ export const AboutContainer = styled.div`
 
 export const AboutLeft = styled.div`
   flex: 40%;
-  font-family: "Nunito", sans-serif;
 
   @media (max-width: 700px) {
     flex: 100%;
@@ -137,16 +137,49 @@ export const TabBody = styled.div`
 `;
 
 export const SkillItem = styled.div`
-  text-align: center;
-  padding: 1rem;
-  width: 200px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 200px;
+  padding: 1rem; 
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-primary);
 `;
 
 export const SkillIcon = styled.img`
   max-width: 50px;
   width: 100%;
+  margin-right: 1rem;
 `;
 
 export const SkillText = styled.h3`
   margin-top: 1rem;
+`;
+
+export const ExpBody = styled.div`
+  width: 100%;
+  height: 100px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-semidark);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+`;
+
+export const ExpYear = styled.span`
+
+`;
+
+export const ExpImg = styled.img`
+  max-width: 50px;
+  width: 100%;
+`;
+
+export const ExpLink = styled.a`
+
 `;

@@ -1,5 +1,4 @@
 import React from "react";
-import * as C from "./Styles";
 
 import Profile from "../../components/Profile/Profile";
 import About from "../../components/About/About";
@@ -11,7 +10,7 @@ function Home() {
     <>
       <Profile />
       <About />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Footer />
     </>
   );
