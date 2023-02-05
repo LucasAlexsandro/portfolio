@@ -1,12 +1,14 @@
-import React from "react";
-import GlobalStyle from "./styles/global";
-import Home from "./pages/Home/Home";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import Profile from './components/Profile/Profile';
 
-export default function App() {
+function App() {
   return (
     <>
-      <GlobalStyle />
-      <Home/>
+      <Profile />
     </>
-  );
+  )
 }
+
+export default App

@@ -10,8 +10,8 @@ export const Profile = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  width: 210px;
-  background: linear-gradient(90deg, #9572fc, #54e0c4, #e2d45c, #9572fc);
+  width: 250px;
+  background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
   border-radius: 50%;
   padding: 4px;
   transition: transform 0.3s;
@@ -81,11 +81,11 @@ export const Social = styled.ul`
 export const SocialItem = styled.li`
   margin: 1rem;
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     margin: 0.5rem;
   }
 
-  @media (max-width: 350px){
+  @media (max-width: 350px) {
     margin: 0.2rem;
   }
 `;
@@ -129,26 +129,26 @@ export const NavBar = styled.div`
 `;
 
 export const NavLink = styled.a`
-    font-size: 2rem;
-    padding: 2rem 1rem;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: var(--color-bg);
+  text-decoration: none;
+  transition: color 0.3s linear;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &:hover {
     color: var(--color-bg);
-    text-decoration: none;
-    transition: color 0.3s linear;
-    border-radius: 10px;
-    cursor: pointer;
-
-    @media (max-width: 576px) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    &:hover {
-      color: var(--color-bg);
-      background-color: var(--color-verde);
-      text-align: center;
-    }
+    background-color: var(--color-verde);
+    text-align: center;
+  }
 `;
 
 export const NavClose = styled.button`
