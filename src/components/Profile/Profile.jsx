@@ -9,7 +9,6 @@ import {
   FaBehance,
 } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
-
 import Logo from "../../assets/images/logo.png";
 
 function Profile() {
