@@ -84,3 +84,7 @@ body {
   -moz-osx-font-smoothing: grayscale; /* apenas para Mac OS X/macOS */
   font-smooth: always; /* Non-standard */
 }
+
+.debug {
+  border: 1px solid red;
+}
