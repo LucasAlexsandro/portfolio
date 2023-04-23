@@ -6,13 +6,14 @@ export const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 
   .container {
     .row {
-      .col-6 {
+      .col-7 {
         form {
           input {
-            border: 1px solid var(--color-semidark);
+            border: 2px solid var(--color-semidark);
             background-color: transparent;
             border-radius: 5px;
             color: #fff;
@@ -20,15 +21,12 @@ export const ContactContainer = styled.div`
           input[type="submit"] {
             background-color: var(--color-primary);
             color: #fff;
+            font-weight: bold;
           }
           textarea {
-            border: 1px solid var(--color-semidark);
+            border: 2px solid var(--color-semidark);
             background-color: transparent;
             border-radius: 5px;
-          }
-
-          .active-alert {
-            display: ${props => props.active}
           }
         }
       }

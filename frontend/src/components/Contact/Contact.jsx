@@ -1,40 +1,65 @@
 import React from "react";
 import * as C from "./Styles";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+} from "@chakra-ui/react";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
   const [info, setInfo] = useState("");
-  const [alert, setAlert] = useState(false);
+  const [alertError, setAlertError] = useState(false);
+  const [alertSuccess, setAlertSuccess] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
 
     if (name === "" || email === "" || tel === "" || info === "") {
-      alert("Preencha todos os campos");
+      setInterval(() => {
+        setAlertError(false);
+      }, 4000);
+      setAlertError(true)
+      return;
     }
 
+    // Template de email
     const templateParams = {
       from_name: name,
       tel: tel,
       email: email,
-      message: info
-    }
+      message: info,
+    };
 
-    emailjs.send("service_yq4b3vk", "template_p2udlw4", templateParams, "cnD_sRYqNff9J_szA")
-    .then((response) => {
-      alert("Email Enviado Com Sucesso")
-      setName("")
-      setEmail("")
-      setTel("")
-      setInfo("")
-    }, (err) => {
-      console.log("Error: ", err)
-    })
-
+    // Config emailJS
+    emailjs
+      .send(
+        "service_yq4b3vk",
+        "template_p2udlw4",
+        templateParams,
+        "cnD_sRYqNff9J_szA"
+      )
+      .then(
+        (response) => {
+          setName("");
+          setEmail("");
+          setTel("");
+          setInfo("");
+          setAlertError(false);
+          setInterval(() => {
+            setAlertSuccess(false);
+          }, 4000);
+          setAlertSuccess(true);
+        },
+        (err) => {
+          console.log("Error: ", err);
+        }
+      );
   }
 
   return (
@@ -42,12 +67,11 @@ export default function Contact() {
       <C.ContactContainer>
         <div className="container">
           <div className="row d-flex flex-wrap align-center justify-content-center">
-            <div className="col-6">
+            <div className="col-7">
               <form className="w-100" onSubmit={sendEmail}>
                 <input
                   type="text"
                   placeholder="Nome"
-                  required
                   className="w-100 p-3 mt-3"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -69,20 +93,28 @@ export default function Contact() {
                 <textarea
                   rows="5"
                   placeholder="Informações"
-                  required
                   className="w-100 p-3 mt-3"
                   value={info}
                   onChange={(e) => setInfo(e.target.value)}
                 ></textarea>
                 <input type="submit" className="w-100 p-3 mt-3" />
-                {/* <div
-                  className="alert alert-danger mt-5 active-alert"
-                  role="alert"
-                  active={alert}
-                >
-                  Algum dado está faltando para o envio de email! por favor
-                  preencha todos os campos.
-                </div> */}
+                <div className="mt-3">
+                  {alertError ? (
+                    <Alert status="error" mt={4} mb={4}>
+                      <AlertIcon />
+                      <AlertTitle>Ops, Algo deu errado!</AlertTitle>
+                      <AlertDescription>
+                        Por favor, verifique se preencheu todos os campos.
+                      </AlertDescription>
+                    </Alert>
+                  ) : null}
+                </div>
+                {alertSuccess ? (
+                  <Alert status="success" variant="left-accent">
+                    <AlertIcon />
+                    Email enviado com sucesso, em breve estarei entrando em contato! :D
+                  </Alert>
+                ) : null}
               </form>
             </div>
           </div>
