@@ -9,6 +9,10 @@ import {
   AlertDescription,
 } from "@chakra-ui/react";
 
+import Email from "../../assets/images/mail.png";
+import Phone from "../../assets/images/smartphone.png";
+import Location from "../../assets/images/location.png";
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,7 +28,7 @@ export default function Contact() {
       setInterval(() => {
         setAlertError(false);
       }, 4000);
-      setAlertError(true)
+      setAlertError(true);
       return;
     }
 
@@ -66,8 +70,13 @@ export default function Contact() {
     <>
       <C.ContactContainer>
         <div className="container">
-          <div className="row d-flex flex-wrap align-center justify-content-center">
-            <div className="col-7">
+          <div className="row d-flex align-items-center justify-content-center">
+            <div className="col-md-9 box-container-form">
+              <div className="contact-title">
+                <span className="subtitle">Contate-me</span>
+                <h1 className="mt-4">Vamos criar algo incrível juntos?</h1>
+                <span className="mt-3 mw-50">Preencha todos os campos abaixo para que possamos te ajudar.</span>
+              </div>
               <form className="w-100" onSubmit={sendEmail}>
                 <input
                   type="text"
@@ -100,20 +109,19 @@ export default function Contact() {
                 <input type="submit" className="w-100 p-3 mt-3" />
                 <div className="mt-3">
                   {alertError ? (
-                    <Alert status="error" mt={4} mb={4}>
-                      <AlertIcon />
-                      <AlertTitle>Ops, Algo deu errado!</AlertTitle>
-                      <AlertDescription>
-                        Por favor, verifique se preencheu todos os campos.
-                      </AlertDescription>
-                    </Alert>
+                    <>
+                      <div class="alert alert-danger" role="alert">
+                        Ops, Algo deu errado! Por favor, verifique se preencheu
+                        todos os campos.
+                      </div>
+                    </>
                   ) : null}
                 </div>
                 {alertSuccess ? (
-                  <Alert status="success" variant="left-accent">
-                    <AlertIcon />
-                    Email enviado com sucesso, em breve estarei entrando em contato! :D
-                  </Alert>
+                  <div class="alert alert-success" role="alert">
+                    Dados enviados com sucesso! Em breve estarei entrando em
+                    contato.
+                  </div>
                 ) : null}
               </form>
             </div>

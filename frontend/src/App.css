@@ -1,7 +1,7 @@
 :root {
   --color-primary: #8758ff;
-  --color-dark: #0b0c1b;
-  --color-semidark: #1a1b2e;
+  --color-dark: #212228;
+  --color-semidark: #2d2e36;
   --color-yellow: #ffc107;
   --color-text: #e1e1e6;
   --color-branco: #ffffff;
@@ -78,7 +78,7 @@ body {
   padding: 0;
   background-color: var(--color-dark);
   color: var(--color-text);
-  font-family: "Inter", Helvetica, Sans-Serif;
+  font-family: "Poppins", Helvetica, Sans-Serif;
   text-rendering: optimizeLegibility; /* não funciona no IE e Edge */
   -webkit-font-smoothing: antialiased; /* apenas para Mac OS X/macOS */
   -moz-osx-font-smoothing: grayscale; /* apenas para Mac OS X/macOS */

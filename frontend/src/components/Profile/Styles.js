@@ -40,8 +40,14 @@ export const LogoContainer = styled.div`
 export const TextName = styled.h1`
   margin-top: 1.6rem;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 6rem;
   color: var(--color-primary);
+
+  small {
+    color: transparent;
+    -webkit-text-stroke: 1px #d0d6f5;
+    text-stroke: 1px #d0d6f5;
+  }
 
   @media (max-width: 560px) {
     font-size: 2.3rem;
@@ -72,10 +78,10 @@ export const TextDev = styled.span`
 `;
 
 export const Social = styled.ul`
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  padding: 0;
 `;
 
 export const SocialItem = styled.li`

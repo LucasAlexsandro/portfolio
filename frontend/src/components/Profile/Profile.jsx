@@ -19,7 +19,7 @@ function Profile() {
       <C.LogoContainer>
         <img src={Logo} alt="logo lucas" />
       </C.LogoContainer>
-      <C.TextName>Lucas Alexsandro</C.TextName>
+      <C.TextName>Lucas <small>Alexsandro</small></C.TextName>
       <C.TextDev>
             {"<"} <span>Code</span> {">"}
             <TypeAnimation
