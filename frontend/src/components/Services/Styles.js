@@ -77,7 +77,27 @@ export const ServicesContainer = styled.section`
         border-radius: 100%;
 
         img {
-          max-width: 80%;
+          animation: rotate 3s linear infinite;
+          max-width: 60%;
+          width: 100%;
+
+          @keyframes rotate {
+            0% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(10px);
+            }
+            60% {
+              transform: translateY(0px);
+            }
+            80% {
+              transform: translateY(-10px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
         }
       }
     }

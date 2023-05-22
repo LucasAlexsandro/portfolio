@@ -72,7 +72,8 @@ export const TextDev = styled.span`
     margin-left: 0.8rem;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
+    text-align: center;
     font-size: 1rem;
   }
 `;

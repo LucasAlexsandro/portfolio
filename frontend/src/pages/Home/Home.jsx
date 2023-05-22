@@ -9,7 +9,7 @@ function Home() {
     <>
       <Profile />
       {/* <About /> */}
-      {/* <Services /> */}
+      <Services />
       <Contact />
     </>
   )

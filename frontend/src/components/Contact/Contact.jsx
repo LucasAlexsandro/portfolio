@@ -106,7 +106,7 @@ export default function Contact() {
                   value={info}
                   onChange={(e) => setInfo(e.target.value)}
                 ></textarea>
-                <input type="submit" className="w-100 p-3 mt-3" />
+                <input type="submit" value="Enviar Agora" className="w-100 p-3 mt-3" />
                 <div className="mt-3">
                   {alertError ? (
                     <>
@@ -119,8 +119,7 @@ export default function Contact() {
                 </div>
                 {alertSuccess ? (
                   <div class="alert alert-success" role="alert">
-                    Dados enviados com sucesso! Em breve estarei entrando em
-                    contato.
+                    Dados enviados com sucesso! Em breve estarei entrando em contato 😀
                   </div>
                 ) : null}
               </form>

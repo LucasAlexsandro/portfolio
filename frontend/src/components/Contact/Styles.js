@@ -56,7 +56,7 @@ export const ContactContainer = styled.div`
           input {
             border: none;
             border: 1px solid var(--color-dark);
-            border-radius: 10px;
+            border-radius: 5px;
             background-color: transparent;
             color: #fff;
             outline: none;
@@ -67,7 +67,7 @@ export const ContactContainer = styled.div`
             background-color: transparent;
             border: none;
             background-color: var(--color-semidark);
-            border-radius: 10px;
+            border-radius: 5px;
             outline: none;
           }
           input[type="submit"] {

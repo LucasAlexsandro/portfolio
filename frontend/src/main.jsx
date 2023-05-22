@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import { Routes, Route } from 'react-router';
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

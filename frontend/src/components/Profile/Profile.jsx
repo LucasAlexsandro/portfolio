@@ -23,7 +23,7 @@ function Profile() {
       <C.TextDev>
             {"<"} <span>Code</span> {">"}
             <TypeAnimation
-              sequence={[ "Eu sou Web Developer",1000, "Eu sou Freelancer",1000,]}
+              sequence={[ "Eu sou Web Developer",1000, "Eu sou Freelancer",1000, "Eu sou Apaixonado por tecnologia ❤️",1000,]}
               speed={10}
               wrapper="p"
               repeat={Infinity}
