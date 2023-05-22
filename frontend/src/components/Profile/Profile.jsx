@@ -50,7 +50,7 @@ function Profile() {
         <C.SocialItem>
           <C.SocialLink
             target="_blank"
-            href="https://linkedin.com/in/lucasalexsandro"
+            href="https://facebook.com/lucasalexsandr0"
           >
             <FaFacebookF />
           </C.SocialLink>
@@ -58,7 +58,7 @@ function Profile() {
         <C.SocialItem>
           <C.SocialLink
             target="_blank"
-            href="https://linkedin.com/in/lucasalexsandro"
+            href="https://github.com/LucasAlexsandro"
           >
             <FaGithubAlt />
           </C.SocialLink>{" "}
