@@ -1,4 +1,5 @@
 import React from 'react'
+import BtnFixedMenu from '../../components/BtnFixedMenu/BtnFixedMenu';
 import Profile from "../../components/Profile/Profile";
 import About from '../../components/About/About';
 import Contact from '../../components/Contact/Contact';
@@ -8,10 +9,11 @@ import Header from '../../components/Header/Header';
 function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <BtnFixedMenu />
       <Profile />
-      {/* <About /> */}
-      {/* <Services /> */}
+      <About />
+      <Services />
       <Contact />
     </>
   )

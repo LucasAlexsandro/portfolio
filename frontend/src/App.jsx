@@ -6,7 +6,6 @@ import "./App.css";
 
 //Pages
 import Home from "./pages/Home/Home";
-import Login from "./pages/Login/Login";
 import Bio from "./pages/Bio/Bio";
 
 // App
@@ -15,7 +14,6 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/bio" element={<Bio />} />
-      <Route path="/login" element={<Login />} />
     </Routes>
   );
 };

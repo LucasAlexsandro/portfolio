@@ -78,7 +78,7 @@ body {
   padding: 0;
   background-color: var(--color-dark);
   color: var(--color-text);
-  font-family: "Poppins", Helvetica, Sans-Serif;
+  font-family: "Rubik", Helvetica, Sans-Serif;
   text-rendering: optimizeLegibility; /* não funciona no IE e Edge */
   -webkit-font-smoothing: antialiased; /* apenas para Mac OS X/macOS */
   -moz-osx-font-smoothing: grayscale; /* apenas para Mac OS X/macOS */

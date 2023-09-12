@@ -12,7 +12,7 @@ function Services() {
       <div className="container">
         <S.ServicesContainer>
           <h5>Minhas Especialidades</h5>
-          <h1 className="mt-3">Como posso ajudar a crescer o seu negócio!</h1>
+          <h1 className="mt-3">Como posso ajudar o seu negócio!</h1>
           <div className="service-grid-cards">
             <div className="service-card">
               <div className="service-card-logo">

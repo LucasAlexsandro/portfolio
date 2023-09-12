@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as C from "./Styles";
 import { TypeAnimation } from "react-type-animation";
-import { AiOutlineMenu } from "react-icons/ai";
 import {
   FaGithubAlt,
   FaFacebookF,
@@ -12,8 +11,6 @@ import { CgClose } from "react-icons/cg";
 import Logo from "../../assets/images/logo.png";
 
 function Profile() {
-  const [menu, setMenu] = useState(false);
-
   return (
     <C.Profile>
       <C.LogoContainer>
@@ -23,7 +20,7 @@ function Profile() {
       <C.TextDev>
             {"<"} <span>Code</span> {">"}
             <TypeAnimation
-              sequence={[ "Eu sou Web Developer",1000, "Eu sou Freelancer",1000, "Eu sou Apaixonado por tecnologia ❤️",1000,]}
+              sequence={[ "I am Web Developer",1000, "I am Freelancer",1000, "Eu sou Apaixonado por tecnologia ❤️",1000,]}
               speed={10}
               wrapper="p"
               repeat={Infinity}
@@ -63,22 +60,7 @@ function Profile() {
             <FaGithubAlt />
           </C.SocialLink>{" "}
         </C.SocialItem>
-        <C.SocialItem>
-          <C.SocialLink onClick={() => setMenu(true)}>
-            <AiOutlineMenu />
-          </C.SocialLink>
-        </C.SocialItem>
       </C.Social>
-      <C.NavBar open={menu}>
-        <C.NavClose onClick={() => setMenu(false)}>
-          <CgClose />
-        </C.NavClose>
-        <C.NavLink>Home</C.NavLink>
-        <C.NavLink>Sobre</C.NavLink>
-        <C.NavLink>Serviços</C.NavLink>
-        <C.NavLink>Portfólio</C.NavLink>
-        <C.NavLink>Contato</C.NavLink>
-      </C.NavBar>
     </C.Profile>
   );
 }

@@ -120,7 +120,6 @@ export const NavBar = styled.div`
   display: flex;
   flex-direction: column;
   background-color: var(--color-semidark);
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   height: 100vh;
   width: 30%;
   padding: 2rem;
