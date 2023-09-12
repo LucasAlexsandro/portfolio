@@ -13,6 +13,10 @@ export const AboutContainer = styled.section`
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    @media (max-width: 620px) {
+      display: flex;
+      flex-direction: column;
+    }
     .about-area-text {
       h2 {
         text-transform: uppercase;
@@ -47,11 +51,16 @@ export const AboutContainer = styled.section`
       justify-content: center;
       align-items: center;
       @media (max-width: 900px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 6fr;
+        display: flex;
+        flex-direction: column;
+      }
+      @media (max-width: 620px) {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
       }
       div {
-        height: 300px;
+        height: 400px;
         border-radius: 20px;
         img {
           max-width: 100%;
