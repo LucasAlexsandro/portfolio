@@ -23,6 +23,7 @@ export const AboutContainer = styled.section`
         border-bottom: 1px dashed #dfdfdf;
         max-width: 400px;
         padding-bottom: 1rem;
+        color: var(--color-semidark);
         span {
           color: var(--color-primary);
         }
@@ -31,6 +32,7 @@ export const AboutContainer = styled.section`
         padding-top: 1rem;
         padding-right: 1rem;
         text-align: justify;
+        color: var(--color-semidark);
       }
       button {
         padding: 0.5rem 1.3rem;
