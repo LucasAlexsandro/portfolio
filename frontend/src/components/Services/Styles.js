@@ -36,22 +36,17 @@ export const ServicesContainer = styled.section`
   }
 
   .service-grid-cards {
+    width: 100%;
     margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 2rem;
-
-    @media (max-width: 900px) {
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
 
     .service-card {
       height: 400px;
-      max-width: 300px;
+      max-width: 350px;
       width: 100%;
       /* background: #e7e7e7; */
       border-radius: 20px;
