@@ -6,6 +6,7 @@ import Contact from '../../components/Contact/Contact';
 import Services from '../../components/Services/Services';
 import Header from '../../components/Header/Header';
 import BlogArea from '../../components/BlogArea/BlogArea';
+import Footer from '../../components/Footer';
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
       <About />
       <Services />
       {/* <BlogArea /> */}
-      <Contact />
+      <Footer />
     </>
   )
 }

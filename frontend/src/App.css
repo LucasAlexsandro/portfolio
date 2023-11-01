@@ -64,19 +64,18 @@ ul {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--color-dark);
+  background: white;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--color-primary);
   border-radius: 10px;
-  border: 2px solid var(--color-semidark);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-dark);
+  background-color: white;
   color: var(--color-text);
   font-family: "Rubik", Helvetica, Sans-Serif;
   text-rendering: optimizeLegibility; /* não funciona no IE e Edge */

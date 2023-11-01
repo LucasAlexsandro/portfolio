@@ -45,8 +45,8 @@ export const TextName = styled.h1`
 
   small {
     color: transparent;
-    -webkit-text-stroke: 1px #d0d6f5;
-    text-stroke: 1px #d0d6f5;
+    -webkit-text-stroke: 2px var(--color-primary);
+    text-stroke: 2px var(--color-primary);
   }
 
   @media (max-width: 560px) {

@@ -5,14 +5,15 @@ import Cell from "../../assets/images/mobile-dynamic-gradient.png";
 import WebDev from "../../assets/images/perspective_matte-451-128x128.png";
 import QA from "../../assets/images/perspective_matte-458-128x128.png";
 import WebDesign from "../../assets/images/perspective_matte-437-128x128.png";
+import { Container } from "../../pages/Home/Styles";
 
 function Services() {
   return (
     <S.ServicesArea>
-      <div className="container">
+      <Container>
         <S.ServicesContainer>
           <h5>Minhas Especialidades</h5>
-          <h1 className="mt-3">Como posso ajudar o seu negócio!</h1>
+          <h1 className="mt-3">Especialidades</h1>
           <div className="service-grid-cards">
             <div className="service-card">
               <div className="service-card-logo">
@@ -38,7 +39,7 @@ function Services() {
                 </p>
               </div>
             </div>
-            <div className="service-card">
+            {/* <div className="service-card">
               <div className="service-card-logo">
                 <img src={Cell} />
               </div>
@@ -50,7 +51,7 @@ function Services() {
                   e acessível aos usuários.
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="service-card">
               <div className="service-card-logo">
                 <img src={QA} />
@@ -66,7 +67,7 @@ function Services() {
             </div>
           </div>
         </S.ServicesContainer>
-      </div>
+      </Container>
     </S.ServicesArea>
   );
 }
