@@ -1,6 +1,7 @@
 import React from "react";
 import * as A from "./Styles";
 import { Container } from "../../pages/Home/Styles";
+import Profile from "../../assets/profile.jpg";
 
 import Logo from "../../assets/images/logo.png";
 
@@ -15,17 +16,27 @@ export default function About() {
                 Lucas <span>Alexsandro</span>
               </h2>
               <p>
-                My name is David Parker. I am a graphic designer, and I'm very
-                passionate and dedicated to my work. With 20 years experience as
-                a professional a graphic designer, I have acquired the skills
-                and knowledge.
+                Olá, meu nome é Lucas Alexsandro e sou um desenvolvedor web com
+                dois anos de experiência na área. Sou apaixonado e dedicado ao
+                meu trabalho, buscando constantemente novos desafios e
+                oportunidades de aprendizado. Meu objetivo é criar soluções web
+                criativas e funcionais que atendam às necessidades dos meus
+                clientes e proporcionem uma experiência excepcional aos
+                usuários. Explore meu portfólio e veja como posso contribuir
+                para o sucesso do seu projeto.
               </p>
               <button>Ver mais</button>
             </div>
             <div className="about-area-img">
-              <div className="grid-item"><img src="https://lucasdeveloper.netlify.app/assets/img1.png" /></div>
-              <div className="grid-item"><img src="https://lucasdeveloper.netlify.app/assets/img1.png" /></div>
-              <div className="grid-item"><img src="https://lucasdeveloper.netlify.app/assets/img1.png" /></div>
+              <div className="grid-item">
+                <img src={Profile} />
+              </div>
+              <div className="grid-item">
+                <img src="https://www.techreviews.com.br/wp-content/uploads/2021/07/notebook-para-programar-0-coding-924920_1920.jpg" />
+              </div>
+              <div className="grid-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Centro_de_Mossor%C3%B3_%28RN%29.jpg" />
+              </div>
             </div>
           </div>
         </Container>

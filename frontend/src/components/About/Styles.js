@@ -69,6 +69,9 @@ export const AboutContainer = styled.section`
           object-fit: cover;
           overflow-clip-margin: content-box;
           overflow: clip;
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
         }
         :nth-child(1) {
           grid-area: 1 / 1 / 7 / 3;
