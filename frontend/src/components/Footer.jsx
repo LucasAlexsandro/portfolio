@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../pages/Home/Styles";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { LuHandMetal } from "react-icons/lu";
+// import { LuHandMetal } from "react-icons/lu";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter, AiFillInstagram, AiFillFacebook, AiFillGithub } from "react-icons/ai";
 
@@ -76,7 +76,7 @@ export default function Footer() {
           <h1> Vamos conversar ? </h1>
           <Link to="/contact">
             <button>
-              <i><LuHandMetal /></i>
+              {/* <i><LuHandMetal /></i> */}
               Vamos fazer isso
             </button>
           </Link>
