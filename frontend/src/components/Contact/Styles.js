@@ -42,7 +42,7 @@ export const ContactContainer = styled.div`
           }
 
           h1 {
-
+            color: var(--color-semidark);
           }
 
           span {
@@ -58,17 +58,14 @@ export const ContactContainer = styled.div`
             border: 1px solid var(--color-dark);
             border-radius: 5px;
             background-color: transparent;
-            color: #fff;
             outline: none;
-            background-color: var(--color-semidark);
           }
           textarea {
-            color: #fff;
             background-color: transparent;
             border: none;
-            background-color: var(--color-semidark);
             border-radius: 5px;
             outline: none;
+            border: 1px solid var(--color-dark);
           }
           input[type="submit"] {
             background-color: var(--color-primary);

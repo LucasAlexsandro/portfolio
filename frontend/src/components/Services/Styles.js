@@ -45,7 +45,7 @@ export const ServicesContainer = styled.section`
     gap: 2rem;
 
     .service-card {
-      height: 400px;
+      height: 450px;
       max-width: 350px;
       width: 100%;
       /* background: #e7e7e7; */
@@ -60,6 +60,7 @@ export const ServicesContainer = styled.section`
       transition-property: transform;
       transition-timing-function: ease-out;
       border: 3px solid var(--color-primary);
+      box-shadow: 4px 4px 0px 0px var(--color-primary);
 
       &:hover {
         transform: rotate(-3deg);
@@ -102,13 +103,25 @@ export const ServicesContainer = styled.section`
       }
     }
     .service-content {
-      padding-left: 1.4rem;
-      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
       h3 {
         color: var(--color-primary);
       }
       p {
         color: #000;
+      }
+      i {
+        font-size: 1.4rem;
+        color: var(--color-verde);
+        span {
+          font-size: 1rem;
+          margin-left: 1rem;
+          color: var(--color-primary);
+          font-weight: 500;
+        }
       }
     }
   }

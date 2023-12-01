@@ -6,6 +6,8 @@ import WebDev from "../../assets/images/perspective_matte-451-128x128.png";
 import QA from "../../assets/images/perspective_matte-458-128x128.png";
 import WebDesign from "../../assets/images/perspective_matte-437-128x128.png";
 import { Container } from "../../pages/Home/Styles";
+import { FaCheck } from "react-icons/fa6";
+
 
 function Services() {
   return (
@@ -25,6 +27,18 @@ function Services() {
                   Transformando ideias em código para construir experiências
                   interativas na web.
                 </p>
+                <i>
+                  <FaCheck />
+                  <span>Web Site Development</span>
+                </i>
+                <i>
+                  <FaCheck />
+                  <span>Development api</span>
+                </i>
+                <i>
+                  <FaCheck />
+                  <span>Data Base</span>
+                </i>
               </div>
             </div>
             <div className="service-card">
@@ -37,6 +51,18 @@ function Services() {
                   Criando layouts atraentes e funcionais para transmitir
                   mensagens e envolver os usuários online.
                 </p>
+                <i>
+                  <FaCheck />
+                  <span>Web Site Design</span>
+                </i>
+                <i>
+                  <FaCheck />
+                  <span>Web Site Responsive</span>
+                </i>
+                <i>
+                  <FaCheck />
+                  <span>Layouts</span>
+                </i>
               </div>
             </div>
             {/* <div className="service-card">
@@ -57,12 +83,24 @@ function Services() {
                 <img src={QA} />
               </div>
               <div className="service-content">
-                <h3>QA</h3>
+                <h3>Quality Assurance</h3>
                 <p>
                   Garantindo a excelência e a confiabilidade de produtos e
                   serviços por meio de testes rigorosos, identificação de
-                  problemas e melhoria contínua.
+                  problemas.
                 </p>
+                <i>
+                  <FaCheck />
+                  <span>Web Site Testing</span>
+                </i>
+                <i>
+                  <FaCheck />
+                  <span>Testing Api</span>
+                </i>
+                <i>
+                  <FaCheck />
+                  <span>Data Base</span>
+                </i>
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ export const AboutContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding-bottom: 2rem;
 
   .about-grid {
@@ -87,5 +88,13 @@ export const AboutContainer = styled.section`
         }
       }
     }
+  }
+
+  .about-section-data {
+    width: 100%;
+    height: 80px;
+    margin-top: 3rem;
+    border-radius: 20px;
+    background: var(--color-text);
   }
 `;

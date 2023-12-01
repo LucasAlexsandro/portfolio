@@ -4,6 +4,7 @@ import { Container } from "../../pages/Home/Styles";
 import Profile from "../../assets/profile.jpg";
 
 import Logo from "../../assets/images/logo.png";
+import Button from "../button";
 
 export default function About() {
   return (
@@ -25,7 +26,7 @@ export default function About() {
                 usuários. Explore meu portfólio e veja como posso contribuir
                 para o sucesso do seu projeto.
               </p>
-              <button>Ver mais</button>
+              <Button text="Ver mais" />
             </div>
             <div className="about-area-img">
               <div className="grid-item">
@@ -38,6 +39,11 @@ export default function About() {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Centro_de_Mossor%C3%B3_%28RN%29.jpg" />
               </div>
             </div>
+          </div>
+        </Container>
+        <Container>
+          <div className="about-section-data">
+
           </div>
         </Container>
       </A.AboutContainer>

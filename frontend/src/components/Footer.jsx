@@ -1,8 +1,9 @@
 import React from "react";
-import { Container } from "../pages/Home/Styles";
 import styled from "styled-components";
+
+import { Container } from "../pages/Home/Styles";
 import { Link } from "react-router-dom";
-// import { LuHandMetal } from "react-icons/lu";
+import { LuHandMetal } from "react-icons/lu";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineTwitter, AiFillInstagram, AiFillFacebook, AiFillGithub } from "react-icons/ai";
 
@@ -30,7 +31,13 @@ export const FooterContainer = styled.div`
       font-weight: 400;
       border-radius: 50px;
       background: transparent;
-      border: 1px solid var(--color-primary);
+      border: 3px solid var(--color-verde);
+      box-shadow: 4px 4px 0px 0px var(--color-verde);
+      transition: 0.2s linear;
+      &:hover {
+        background: var(--color-verde);
+        box-shadow: 0px 0px 0px 0px var(--color-primary);
+      }
       i {
         margin-right: 1rem;
         font-size: 1.4rem;
@@ -61,8 +68,11 @@ export const FooterContainer = styled.div`
   .footer-end {
     text-align: center;
     margin-top: 50px;
+    padding: 1rem;
+    color: black;
+    width: 100%;
     a {
-      color: white;
+      color: var(--color-primary);
       text-decoration: underline;
     }
   }
@@ -76,7 +86,7 @@ export default function Footer() {
           <h1> Vamos conversar ? </h1>
           <Link to="/contact">
             <button>
-              {/* <i><LuHandMetal /></i> */}
+              <i><LuHandMetal /></i>
               Vamos fazer isso
             </button>
           </Link>
