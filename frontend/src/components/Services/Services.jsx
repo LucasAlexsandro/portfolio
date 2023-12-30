@@ -6,7 +6,8 @@ import WebDev from "../../assets/images/perspective_matte-451-128x128.png";
 import QA from "../../assets/images/perspective_matte-458-128x128.png";
 import WebDesign from "../../assets/images/perspective_matte-437-128x128.png";
 import { Container } from "../../pages/Home/Styles";
-import { FaRegCircleCheck } from "react-icons/fa6";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+
 
 
 
@@ -29,15 +30,15 @@ function Services() {
                   interativas na web.
                 </p>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Web Site Development</span>
                 </i>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Development api</span>
                 </i>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Data Base</span>
                 </i>
               </div>
@@ -53,15 +54,15 @@ function Services() {
                   mensagens e envolver os usuários online.
                 </p>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Web Site Design</span>
                 </i>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Web Site Responsive</span>
                 </i>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Layouts</span>
                 </i>
               </div>
@@ -91,15 +92,15 @@ function Services() {
                   problemas.
                 </p>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Web Site Testing</span>
                 </i>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Testing Api</span>
                 </i>
                 <i>
-                  <FaRegCircleCheck />
+                  <IoIosCheckmarkCircleOutline />
                   <span>Data Base</span>
                 </i>
               </div>
