@@ -6,7 +6,8 @@ import WebDev from "../../assets/images/perspective_matte-451-128x128.png";
 import QA from "../../assets/images/perspective_matte-458-128x128.png";
 import WebDesign from "../../assets/images/perspective_matte-437-128x128.png";
 import { Container } from "../../pages/Home/Styles";
-import { FaCheck } from "react-icons/fa6";
+import { FaRegCircleCheck } from "react-icons/fa6";
+
 
 
 function Services() {
@@ -28,15 +29,15 @@ function Services() {
                   interativas na web.
                 </p>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Web Site Development</span>
                 </i>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Development api</span>
                 </i>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Data Base</span>
                 </i>
               </div>
@@ -52,15 +53,15 @@ function Services() {
                   mensagens e envolver os usuários online.
                 </p>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Web Site Design</span>
                 </i>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Web Site Responsive</span>
                 </i>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Layouts</span>
                 </i>
               </div>
@@ -90,15 +91,15 @@ function Services() {
                   problemas.
                 </p>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Web Site Testing</span>
                 </i>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Testing Api</span>
                 </i>
                 <i>
-                  <FaCheck />
+                  <FaRegCircleCheck />
                   <span>Data Base</span>
                 </i>
               </div>
