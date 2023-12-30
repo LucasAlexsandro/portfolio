@@ -4,7 +4,7 @@ import { Container } from "../../pages/Home/Styles";
 import Profile from "../../assets/profile.jpg";
 
 import Logo from "../../assets/images/logo.png";
-import Button from "../button";
+import Button from "../Button";
 
 export default function About() {
   return (
