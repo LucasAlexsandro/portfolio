@@ -72,7 +72,7 @@ export const FooterContainer = styled.div`
     color: black;
     width: 100%;
     a {
-      color: var(--color-primary);
+      color: white;
       text-decoration: underline;
     }
   }
@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-end">
-          <span>Feito com ❤️ por <a href="#">Lucas Alexsandro</a></span>
+          <span>Feito com ❤️ por <a href="https://www.linkedin.com/in/lucasalexsandro/">Lucas Alexsandro</a></span>
         </div>
       </Container>
     </FooterContainer>
