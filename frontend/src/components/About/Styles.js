@@ -43,6 +43,14 @@ export const AboutContainer = styled.section`
         }
       }
     }
+    button {
+      margin-top: 2rem;
+      padding: 1rem 3rem;
+      background: var(--color-primary);
+      border: none;
+      border-radius: 10px;
+      color: white;
+    }
   }
 
 `;

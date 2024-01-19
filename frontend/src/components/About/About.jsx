@@ -21,8 +21,11 @@ export default function About() {
                   responsivos e funcionais para oferecer a melhor experiência
                   aos usuários. Explore meu portfolio e conheça mais sobre meus projetos.
                 </p>
+                <button>Ver mais</button>
               </div>
-              <div className="about-content-img"></div>
+              <div className="about-content-img">
+
+              </div>
             </div>
           </div>
         </Container>
