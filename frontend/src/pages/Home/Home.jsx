@@ -7,6 +7,7 @@ import Services from '../../components/Services/Services';
 import Header from '../../components/Header/Header';
 import BlogArea from '../../components/BlogArea/BlogArea';
 import Footer from '../../components/Footer';
+import Exp from '../../components/Exp';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <BtnFixedMenu />
       <Profile />
       <About />
+      <Exp />
       <Services />
       {/* <BlogArea /> */}
       <Footer />

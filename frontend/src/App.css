@@ -75,8 +75,8 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
-  color: var(--color-text);
+  
+  color: var(--color-semidark);
   font-family: "Rubik", Helvetica, Sans-Serif;
   text-rendering: optimizeLegibility; /* não funciona no IE e Edge */
   -webkit-font-smoothing: antialiased; /* apenas para Mac OS X/macOS */

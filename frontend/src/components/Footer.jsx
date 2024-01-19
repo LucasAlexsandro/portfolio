@@ -24,6 +24,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    color: white;
 
     button {
       color: #ffffff;
