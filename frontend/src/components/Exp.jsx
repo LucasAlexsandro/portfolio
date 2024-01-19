@@ -52,13 +52,13 @@ export default function Exp() {
           <h1>Experiências Profissionais & Estudo</h1>
           <div className="exp-grid">
             <div className="grids">
-              <ExpItem
+              {/* <ExpItem
                 icon={AeCLogo}
                 empresa="AeC Contact Center"
                 cargo="Desenvolvedor Front-End"
                 data="10/10/2023 atualmente"
                 descricao="Atuando como desenvolvedor"
-              />
+              /> */}
               <ExpItem
                 icon={AeCLogo}
                 empresa="AeC Contact Center"
