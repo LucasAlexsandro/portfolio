@@ -19,7 +19,7 @@ export default function About() {
                 <p>
                   Sou um profissional de Desenvolvimento web. Crio sites
                   responsivos e funcionais para oferecer a melhor experiência
-                  aos usuários. Explore meu portfolio e conheça mais sobre mim.
+                  aos usuários. Explore meu portfolio e conheça mais sobre meus projetos.
                 </p>
               </div>
               <div className="about-content-img"></div>
