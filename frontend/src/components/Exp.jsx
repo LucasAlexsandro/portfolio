@@ -4,6 +4,13 @@ import styled from "styled-components";
 import { Container } from "../pages/Home/Styles";
 import ExpItem from "./ExpItem";
 
+// images
+
+import AeCLogo from "../assets/images/AeC.jpg";
+import AluraLogo from "../assets/images/aluracursos_logo.jpg";
+import UnoparLogo from "../assets/images/unopar.jpg";
+
+
 export const ExpContainer = styled.div`
   width: 100%;
   min-height: 70vh;
@@ -46,21 +53,21 @@ export default function Exp() {
           <div className="exp-grid">
             <div className="grids">
               <ExpItem
-                icon="https://media.licdn.com/dms/image/C4D03AQHCQ-aeyybS2Q/profile-displayphoto-shrink_800_800/0/1607028003021?e=1709769600&v=beta&t=gh7JQVVUIIlBgyZLZq17F2Rpaq--Erk683-TKDheyKQ"
+                icon={AeCLogo}
                 empresa="AeC Contact Center"
                 cargo="Desenvolvedor Front-End"
                 data="10/10/2023 atualmente"
                 descricao="Atuando como desenvolvedor"
               />
               <ExpItem
-                icon="https://media.licdn.com/dms/image/C4D03AQHCQ-aeyybS2Q/profile-displayphoto-shrink_800_800/0/1607028003021?e=1709769600&v=beta&t=gh7JQVVUIIlBgyZLZq17F2Rpaq--Erk683-TKDheyKQ"
+                icon={AeCLogo}
                 empresa="AeC Contact Center"
                 cargo="QA Analyst - Pleno"
                 data="10/10/2023 atualmente"
                 descricao="Atuando como QA"
               />
               <ExpItem
-                icon="https://media.licdn.com/dms/image/C4D03AQHCQ-aeyybS2Q/profile-displayphoto-shrink_800_800/0/1607028003021?e=1709769600&v=beta&t=gh7JQVVUIIlBgyZLZq17F2Rpaq--Erk683-TKDheyKQ"
+                icon={AeCLogo}
                 empresa="AeC Contact Center"
                 cargo="I.T Support"
                 data="10/10/2023 atualmente"
@@ -69,7 +76,7 @@ export default function Exp() {
             </div>
             <div className="grids">
               <ExpItem
-                icon="https://pbs.twimg.com/profile_images/1714345331142295552/HPPRN7el_400x400.jpg"
+                icon={UnoparLogo}
                 empresa="Engenharia de software"
                 // cargo="Desenvolvedor Front-End"
                 data="Cursando"
@@ -80,7 +87,7 @@ export default function Exp() {
                  fundamentais da engenharia de software."
               />
               <ExpItem
-                icon="https://pbs.twimg.com/profile_images/1729334778539696128/sfKQV_6s_400x400.jpg"
+                icon={AluraLogo}
                 empresa="Front-end Development"
                 // cargo="Desenvolvedor Front-End"
                 data="Finalizado"

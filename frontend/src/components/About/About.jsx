@@ -17,9 +17,9 @@ export default function About() {
                 <h3>Sobre</h3>
                 <h1>Transformando visões em incríveis negócios</h1>
                 <p>
-                  Nemo design enim ipsam voluptatem quim voluptas sit aspernatur
-                  aut odit auting fugit sed thisnquia consequuntur magni dolores
-                  eos designer heresm qui ratione
+                  Sou um profissional de Desenvolvimento web. Crio sites
+                  responsivos e funcionais para oferecer a melhor experiência
+                  aos usuários. Explore meu portfolio e conheça mais sobre mim.
                 </p>
               </div>
               <div className="about-content-img"></div>
