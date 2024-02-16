@@ -111,7 +111,7 @@ export const ServicesContainer = styled.section`
         color: var(--color-primary);
       }
       p {
-        color: #000;
+        color: white;
       }
       i {
         font-size: 1.4rem;

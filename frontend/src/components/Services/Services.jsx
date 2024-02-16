@@ -9,8 +9,6 @@ import { Container } from "../../pages/Home/Styles";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 
-
-
 function Services() {
   return (
     <S.ServicesArea>

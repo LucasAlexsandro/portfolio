@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #8758ff;
+  --color-primary: #7F27FF;
   --color-dark: #000;
   --color-semidark: #070707;
   --color-yellow: #ffc107;
@@ -7,6 +7,9 @@
   --color-branco: #ffffff;
   --color-bg: #fcf9ff;
   --color-verde: #54e0c4;
+
+  --color-gray-500: #6b7280;
+  --color-gray-200: #e5e7eb;
 
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -54,13 +57,13 @@ ul {
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #8f54a0 #ffffff;
+  scrollbar-width: 2px;
+  scrollbar-color: #ccc #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 2px;
 }
 
 *::-webkit-scrollbar-track {
@@ -75,8 +78,8 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  
-  color: var(--color-semidark);
+  background: #000;
+  color: white;
   font-family: "Rubik", Helvetica, Sans-Serif;
   text-rendering: optimizeLegibility; /* não funciona no IE e Edge */
   -webkit-font-smoothing: antialiased; /* apenas para Mac OS X/macOS */

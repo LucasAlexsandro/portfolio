@@ -5,6 +5,7 @@ import Profile from "../../assets/profile.jpg";
 
 import Logo from "../../assets/images/logo.png";
 import Button from "../Button";
+import Video from "../../assets/coding-unscreen.gif"
 
 export default function About() {
   return (
@@ -24,7 +25,9 @@ export default function About() {
                 <button>Ver mais</button>
               </div>
               <div className="about-content-img">
-
+              <figure class="gif">
+                    <img src={Video} />
+              </figure>
               </div>
             </div>
           </div>

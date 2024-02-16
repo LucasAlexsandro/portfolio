@@ -63,7 +63,7 @@ export const TextDev = styled.span`
   font-weight: bold;
   font-size: var(--h2-font-size);
   display: flex;
-  color: var(--color-semidark);
+  color: white;
 
   span {
     color: var(--color-primary);

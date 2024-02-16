@@ -11,46 +11,62 @@ export const AboutContainer = styled.section`
 
   .about-area {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
-    .about-content-text {
-      h3 {
-        color: var(--color-primary) ;
-        text-transform: uppercase;
+    .about-content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: 750px){
+        grid-template-columns: 1fr;
       }
-      h1 {
-        font-weight: 700;
-        color: var(--color-semidark) ;
-        font-size: 2.6rem;
-        text-transform: uppercase;
-      }
-      p {
-        color: var(--color-semidark) ;
-        margin-top: 3rem;
-        position: relative;
-        padding-left: 110px;
-        text-align: justify;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 18%;
-          left: -10px; /* Ajuste conforme necessário */
-          width: 100px; /* Ajuste conforme necessário */
-          height: 3px;
-          background: var(--color-verde);
-          transform: translateY(-50%);
+      .about-content-text {
+        h3 {
+          color: var(--color-primary);
+          text-transform: uppercase;
+        }
+        h1 {
+          font-weight: 700;
+          color: white;
+          font-size: 2.6rem;
+          text-transform: uppercase;
+        }
+        p {
+          color: white;
+          margin-top: 3rem;
+          position: relative;
+          padding-left: 110px;
+          text-align: justify;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 18%;
+            left: -10px; /* Ajuste conforme necessário */
+            width: 100px; /* Ajuste conforme necessário */
+            height: 3px;
+            background: var(--color-verde);
+            transform: translateY(-50%);
+          }
+        }
+        button {
+          margin-top: 2rem;
+          padding: 1rem 3rem;
+          background: var(--color-primary);
+          border: none;
+          border-radius: 10px;
+          color: white;
         }
       }
     }
-    button {
-      margin-top: 2rem;
-      padding: 1rem 3rem;
-      background: var(--color-primary);
-      border: none;
-      border-radius: 10px;
-      color: white;
-    }
-  }
 
+    .about-content-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 750px){
+        display: none;
+      }
+    }
+
+  }
 `;

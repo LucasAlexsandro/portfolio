@@ -27,7 +27,7 @@ export const FooterContainer = styled.div`
     color: white;
 
     button {
-      color: #ffffff;
+      color: white;
       padding: 1.25em 2em;
       font-weight: 400;
       border-radius: 50px;
@@ -72,6 +72,7 @@ export const FooterContainer = styled.div`
     padding: 1rem;
     color: black;
     width: 100%;
+    color: white;
     a {
       color: white;
       text-decoration: underline;
